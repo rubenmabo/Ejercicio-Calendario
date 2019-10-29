@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Ejercicio 3 - Calendario </title>
+</head>
+<body>
+<form action="vermes.php" method="post">
+<table border="1">
+	<tr>
+		<td>
+			Bienvenido <br> al <br> Generador de calendarios <br>
+			<br>
+			<br>
+			Mes:
+			<select>
+				<option value="Enero">Enero</option>
+				<option value="Febrero">Febrero</option>
+				<option value="Marzo">Marzo</option>
+				<option value="Abril">Abril</option>
+				<option value="Mayo">Mayo</option>
+				<option value="Junio">Junio</option>
+				<option value="Julio">Julio</option>
+				<option value="Agosto">Agosto</option>
+				<option value="Septiembre">Septiembre</option>
+				<option value="Octubre">Octubre</option>
+				<option value="Noviembre">Noviembre</option>
+				<option value="Diciembre">Diciembre</option>
+			</select>
+			
+			<br>
+			<br>
+			
+			Año:
+						
+    		<select name="year">
+      			<cfloop index="YearValue" from="2000" to="2020">
+     		 	<option> <cfoutput>#YearValue#</cfoutput></option>
+    		  	</cfloop>
+   			</select>
+
+		</td>
+		<td>
+			parte de php
+		</td>
+	</tr>
+</table>
+
+	  <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
